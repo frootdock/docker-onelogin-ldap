@@ -19,7 +19,7 @@ RUN \
  apt-get install -y unzip curl && \
  curl -o /tmp/ldap_connector.zip -L https://s3.amazonaws.com/onelogin-downloads/ldapc/${ONELOGIN_LDAP_COONECTOR_VERSION}/ldap_connector.zip && \
  unzip /tmp/ldap_connector.zip && \
- mv /tmp/ldap_connector /bin/ldap_connector
+ mv ./ldap_connector /bin/ldap_connector
 
 
 COPY bin/run-connector.sh /bin/ldap_connector/
