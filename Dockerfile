@@ -25,4 +25,4 @@ RUN \
 COPY bin/run-connector.sh /bin/ldap_connector/
 RUN chmod +x /bin/ldap_connector/*.sh
 
-CMD /bin/run-connector.sh
+CMD /bin/ldap_connector/run-connector.sh
