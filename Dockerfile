@@ -24,5 +24,6 @@ RUN \
 
 COPY bin/run-connector.sh /bin/ldap_connector/
 RUN chmod +x /bin/ldap_connector/*.sh
+RUN mkdir /bin/ldap_connector/log
 
 CMD /bin/ldap_connector/run-connector.sh
