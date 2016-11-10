@@ -16,7 +16,7 @@ ENV ONELOGIN_TOKEN="" \
 
 RUN \
  apt-get update && \
- apt-get install -y unzip && \
+ apt-get install -y unzip curl && \
  curl -o /tmp/ldap_connector.zip -L https://s3.amazonaws.com/onelogin-downloads/ldapc/${ONELOGIN_LDAP_COONECTOR_VERSION}/ldap_connector.zip && \
  unzip /tmp/ldap_connector.zip && \
  mkdir /bin && \
